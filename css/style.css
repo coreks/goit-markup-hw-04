@@ -7,9 +7,9 @@
   --grey-back: rgba(47, 48, 58, 1);
   --grey-line: rgba(236, 236, 236, 1);
   --grey-line-second: rgba(238, 238, 238, 1);
+  --grey-icon-first: rgba(117, 117, 117, 1);
   --white-first: rgba(255, 255, 255, 1);
   --white-second: rgba(245, 244, 250, 1);
-  --gradient: rgba(47, 48, 58, 0.4);
 }
 
 html {
@@ -150,12 +150,26 @@ footer {
   color: var(--blue-first);
 }
 
+.header-contacts .link-icon {
+  width: 100px;
+  height: 120px;
+  fill: var(--grey-icon-first);
+  outline: 2px solid tomato;
+  contain: '';
+  background-size: contain;
+}
+
+.header-contacts .link-icon:hover,
+.header-contacts .link-icon:focus {
+  color: var(--blue-first);
+}
+
 .header-contacts {
   display: flex;
   margin-left: auto;
 }
 
-.header-contacts > li + li {
+.header-contacts > .item + .item {
   margin-left: 50px;
 }
 

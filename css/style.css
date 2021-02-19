@@ -145,18 +145,40 @@ footer {
   padding-bottom: 32px;
 }
 
+.header-contacts {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey-first);
+  outline: olivedrab;
+}
+
 .header-contacts .item:hover,
 .header-contacts .item:focus {
   color: var(--blue-first);
 }
 
-.header-contacts .link-icon {
+.link-icon{
+}
+
+/* .header-contacts > .link-icon > {
+  contain: '';
+  display: flex;
+  fill: red;
+  outline: red;
   width: 100px;
-  height: 120px;
+  height: 100px; */
+
+  /* background-position: center;
+  display: flex;
+  contain: '';
   fill: var(--grey-icon-first);
   outline: 2px solid tomato;
-  contain: '';
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: ; */
 }
 
 .header-contacts .link-icon:hover,
@@ -165,20 +187,12 @@ footer {
 }
 
 .header-contacts {
-  display: flex;
   margin-left: auto;
 }
 
+
 .header-contacts > .item + .item {
   margin-left: 50px;
-}
-
-.header-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey-first);
 }
 
 .hero {

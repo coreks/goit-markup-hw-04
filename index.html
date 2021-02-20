@@ -37,10 +37,10 @@
         </nav>
         <ul class="header-contacts link">
           <li class="item">
-            <a href="mailto:info@devstudio.com">
+            <a class="link" href="mailto:info@devstudio.com">
               <svg class="link-icon">
                 <use
-                  href="./images/envelope-1.svg"
+                  href="./images/icons.svg#envelope"
                   width="16"
                   height="12"
                 ></use>
@@ -48,9 +48,18 @@
               info@devstudio.com
             </a>
           </li>
-          <!-- <svg></svg> -->
+
           <li class="item">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="link" href="tel:+380961111111">
+              <svg class="link-icon">
+                <use
+                  href="./images/icons.svg#smartphone"
+                  width="10"
+                  height="16"
+                ></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -70,6 +79,13 @@
           <!-- <p>абзац</p> -->
           <ul class="skills-list">
             <li class="item icon-аttention">
+              <div class="container-skills-icon">
+                <svg class="skills-icon">
+                  <use href="./images/icons.svg#antenna" wigth="70" height="70">
+                    _
+                  </use>
+                </svg>
+              </div>
               <h3 class="skills-item-title">Внимание к деталям</h3>
               <p class="title-description">
                 Идейные соображения, а также начало повседневной работы по
@@ -78,6 +94,13 @@
             </li>
 
             <li class="item icon-punctuality">
+              <div class="container-skills-icon">
+                <svg class="skills-icon">
+                  <use href="./images/icons.svg#clock" wigth="70" height="70">
+                    _
+                  </use>
+                </svg>
+              </div>
               <h3 class="skills-item-title">Пунктуальность</h3>
               <p class="title-description">
                 Задача организации, в особенности же рамки и место обучения
@@ -86,6 +109,13 @@
             </li>
 
             <li class="item icon-planning">
+              <div class="container-skills-icon">
+                <svg class="skills-icon">
+                  <use href="./images/icons.svg#diagram" wigth="70" height="70">
+                    _
+                  </use>
+                </svg>
+              </div>
               <h3 class="skills-item-title">Планирование</h3>
               <p class="title-description">
                 Равным образом консультация с широким активом в значительной
@@ -94,6 +124,17 @@
             </li>
 
             <li class="item icon-technologies">
+              <div class="container-skills-icon">
+                <svg class="skills-icon">
+                  <use
+                    href="./images/icons.svg#astronaut"
+                    wigth="70"
+                    height="70"
+                  >
+                    _
+                  </use>
+                </svg>
+              </div>
               <h3 class="skills-item-title">Современные технологии</h3>
               <p class="title-description">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -149,15 +190,35 @@
               />
               <h3 class="team-people-name">Игорь Демьяненко</h3>
               <p class="people-position">Product Designer</p>
-              <ul>
-                <li>
-                  <a href="">
-                    <svg class="link-icon">
-                      <use
-                        href="./images/instagram.svg#"
-                        width="20"
-                        height="20"
-                      ></use>
+              <ul class="list-icon-link">
+                <li class="item-link-icon">
+                  <a class="link" href="">
+                    <svg class="link-icon" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="item-link-icon">
+                  <a class="link" href="">
+                    <svg class="link-icon" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="item-link-icon">
+                  <a class="link" href="">
+                    <svg class="link-icon" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="item-link-icon">
+                  <a class="link" href="">
+                    <svg class="link-icon" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use>
                     </svg>
                   </a>
                 </li>

@@ -9,6 +9,7 @@
   --grey-line-second: rgba(238, 238, 238, 1);
   --grey-icon-first: rgba(117, 117, 117, 1);
   --grey-icon-second: rgba(175, 177, 184, 1);
+  --grey-icon-third: rgba(255, 255, 255, 0.1);
   --white-first: rgba(255, 255, 255, 1);
   --white-second: rgba(245, 244, 250, 1);
   --white-background: (245, 244, 250, 1);
@@ -374,7 +375,8 @@ footer {
   margin-right: 10px;
 }
 
-.item-link-icon .link:hover {
+.item-link-icon .link:hover,
+.item-link-icon .link:focus {
   background-color: var(--blue-first);
   color: var(--white-first);
 }
@@ -393,9 +395,54 @@ footer {
   fill: currentColor;
 }
 
+.clients {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-list {
+  display: flex;
+  margin: 0;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item .link:hover,
+.clients-item .link:focus {
+  border-color: var(--blue-first);
+  color: var(--blue-first);
+}
+
+.clients-item .link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--grey-icon-second);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey-icon-second);
+}
+
+.clients-item .link-icon {
+  fill: currentColor;
+}
+
 .footer {
   /* max-width: 1600px; */
-
+  display: flex;
   background-position: center;
   background-color: var(--grey-back);
   padding-top: 60px;
@@ -434,6 +481,43 @@ footer {
 
 .address > .footer-contacts > li:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.connect-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-first);
+}
+
+.connect-list {
+  display: flex;
+}
+
+.connect-list .connect-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.connect-item .link:hover,
+.connect-item .link:focus {
+  background-color: var(--blue-first);
+}
+
+.connect-item .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--grey-icon-third);
+  border-radius: 50%;
+  color: var(--white-first);
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-item .link-icon {
+  fill: currentColor;
 }
 
 /* Портфолио */

@@ -169,15 +169,8 @@ footer {
 }
 
 .header-contacts .link-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header-contacts .item:nth-child(2) .link-icon {
-  width: 10px;
-  height: 16px;
 }
 
 .header-contacts {

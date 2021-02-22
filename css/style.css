@@ -12,7 +12,8 @@
   --grey-icon-third: rgba(255, 255, 255, 0.1);
   --white-first: rgba(255, 255, 255, 1);
   --white-second: rgba(245, 244, 250, 1);
-  --white-background: (245, 244, 250, 1);
+  --white-background-first: rgba(245, 244, 250, 1);
+  --white-backgtoung-second: rgba(229, 229, 229, 1);
 }
 
 html {
@@ -213,6 +214,13 @@ footer {
   color: var(--white-first);
 }
 
+.hero-btn button:hover,
+.hero-btn button:focus {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .hero-btn {
   display: inline-block;
   border-radius: 4px;
@@ -231,6 +239,7 @@ footer {
 .skills {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-backgtoung-second);
 }
 
 .skills-list {
@@ -248,7 +257,7 @@ footer {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: var(--white-background);
+  background-color: var(--white-background-first);
   border-radius: 4px;
   margin-bottom: 30px;
   align-items: center;
@@ -285,6 +294,7 @@ footer {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 82px;
+  background-color: var(--white-backgtoung-second);
 }
 
 .activity-title {
@@ -317,6 +327,7 @@ footer {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-background-first);
 }
 
 .team-title {
@@ -334,7 +345,7 @@ footer {
 .team-list {
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-left: -30px;
 }
 
@@ -342,7 +353,6 @@ footer {
   width: 270px;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  padding-bottom: 30px;
 }
 
 .team-people-name {
@@ -369,6 +379,7 @@ footer {
 .team-list .list-icon-link {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .team-list .item-link-icon:not(:last-child) {
@@ -395,11 +406,25 @@ footer {
   fill: currentColor;
 }
 
+.card-team {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* .card-thumb {
+}
+
+.card-content {
+} */
+
 .clients {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-backgtoung-second);
 }
+
 .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -452,13 +477,11 @@ footer {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .address-container {
   margin-right: 70px;
-}
-
-.foooter .connect-container {
 }
 
 .logo-link {
@@ -495,7 +518,7 @@ footer {
 }
 
 .connect-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -539,6 +562,7 @@ footer {
 .cards {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--white-backgtoung-second);
 }
 
 .btn-list {
@@ -547,6 +571,13 @@ footer {
   justify-content: center;
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.btn-list button:hover,
+.btn-list button:focus {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: -webkit-grab;
 }
 
 .btn-list > li:not(:last-child) {
@@ -621,15 +652,23 @@ footer {
   margin-bottom: 30px;
 }
 
-.cards-list > .item:nth-child(n + 7) {
+/* .cards-list > .item:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
 .cards-list > .item:nth-child(3n + 1) {
   margin-left: 0;
-}
+} */
+/* .card-all {
+} */
 
 .card-item {
   padding: 20px 24px;
   border: 1px solid var(--grey-line-second);
+}
+
+.cards-list > :hover,
+.cards-list > :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }

@@ -13,7 +13,7 @@
   --white-first: rgba(255, 255, 255, 1);
   --white-second: rgba(245, 244, 250, 1);
   --white-background-first: rgba(245, 244, 250, 1);
-  --white-backgtoung-second: rgba(229, 229, 229, 1);
+  --white-backgroung-second: rgba(229, 229, 229, 1);
 }
 
 html {
@@ -65,6 +65,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   /* outline: 2px solid tomato; */
+}
+
+h2 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* header,
@@ -239,7 +243,7 @@ footer {
 .skills {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--white-backgtoung-second);
+  background-color: var(--white-first);
 }
 
 .skills-list {
@@ -279,6 +283,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--black-text);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title-description {
@@ -294,7 +299,7 @@ footer {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 82px;
-  background-color: var(--white-backgtoung-second);
+  background-color: var(--white-first);
 }
 
 .activity-title {
@@ -407,6 +412,7 @@ footer {
 }
 
 .card-team {
+  background-color: var(--white-first);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -422,7 +428,7 @@ footer {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--white-backgtoung-second);
+  background-color: var(--white-first);
 }
 
 .clients-title {
@@ -562,7 +568,7 @@ footer {
 .cards {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--white-backgtoung-second);
+  background-color: var(--white-first);
 }
 
 .btn-list {
@@ -577,7 +583,8 @@ footer {
 .btn-list button:focus {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: -webkit-grab;
+  cursor: pointer;
+  background-color: var(--blue-first);
 }
 
 .btn-list > li:not(:last-child) {
@@ -598,8 +605,6 @@ footer {
 }
 
 .btn-all {
-  color: var(--white-first);
-  background-color: var(--blue-first) !important;
   min-width: 73px;
 }
 
@@ -619,7 +624,7 @@ footer {
   min-width: 130px;
 }
 
-.item-title {
+.cards-list .item-title {
   margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
@@ -628,7 +633,7 @@ footer {
   letter-spacing: 0.06em;
 }
 
-.item-text {
+.cards-list .item-text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -636,6 +641,11 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--grey-first);
+}
+
+.cards-list .item-title,
+.cards-list .item-text {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .cards-list {
@@ -659,8 +669,10 @@ footer {
 .cards-list > .item:nth-child(3n + 1) {
   margin-left: 0;
 } */
-/* .card-all {
-} */
+
+.cards-list .card-all {
+  background-color: var(--white-first);
+}
 
 .card-item {
   padding: 20px 24px;

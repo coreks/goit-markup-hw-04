@@ -257,9 +257,9 @@ footer {
   margin-left: 30px;
 }
 
-/* .skills .container-skills-icon:hover {
+.skills .container-skills-icon:hover {
   background-color: var(--white-first);
-} */
+}
 
 .skills .container-skills-icon {
   display: flex;
